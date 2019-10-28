@@ -16,6 +16,5 @@
 <li class:done={item.done}>
   <input type="checkbox" bind:checked={item.done} />
   <span>{item.name}</span>
-  <!-- event handlers use on:event syntax -->
   <button on:click={() => removeItem(item)}>❌</button>
 </li>

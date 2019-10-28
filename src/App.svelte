@@ -25,11 +25,6 @@
   };
 
   const removeItem = item => {
-    /* 
-			For svelte to recompute/re-render the variable needs to be reassigned.
-
-			It also notices assignments to properties: items[0] = "something"
-		*/
     items = items.filter(i => i != item);
   };
 </script>
